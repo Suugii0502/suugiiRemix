@@ -14,7 +14,7 @@ export default function NewNote() {
                     <label htmlFor="content">Content</label>
                     <input type="text" id="content" name="content" required />
                 </p>
-                <div className="bg-orange-400">
+                <div className="bg-orange-400 m-10 p-10">
                     <button> Add note</button>
                 </div>
             </Form>
