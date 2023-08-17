@@ -2,10 +2,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev",
-    "start": "remix-serve build",
-    "typecheck": "tsc"
+    "build": "nx exec -- remix build",
+    "dev": "nx exec -- remix dev",
+    "start": "nx exec -- remix-serve build",
+    "typecheck": "nx exec -- tsc"
   },
   "dependencies": {
     "@prisma/client": "^5.1.1",
@@ -13,10 +13,14 @@
     "@remix-run/node": "^1.19.2",
     "@remix-run/react": "^1.19.2",
     "@remix-run/serve": "^1.19.2",
+    "class-variance-authority": "^0.7.0",
+    "daisyui": "^3.5.1",
     "isbot": "^3.6.8",
+    "nx": "^16.7.1",
     "prisma": "^5.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tailwind-merge": "^1.14.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -26,11 +30,17 @@
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.38.0",
+    "nx": "16.7.1",
+    "nx-cloud": "latest",
     "postcss": "^8.4.27",
+    "remix-flat-routes": "^0.5.10",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.4"
   },
   "engines": {
     "node": ">=14.0.0"
+  },
+  "nx": {
+    "targets": {}
   }
 }

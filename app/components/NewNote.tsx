@@ -1,5 +1,6 @@
 import React from "react";
 import { Form } from "@remix-run/react";
+import { Button } from "./Button";
 
 export default function NewNote() {
     return (
@@ -14,9 +15,7 @@ export default function NewNote() {
                     <label htmlFor="content">Content</label>
                     <input type="text" id="content" name="content" required />
                 </p>
-                <div className="bg-orange-400 m-10 p-10">
-                    <button> Add note</button>
-                </div>
+                <Button> Add note</Button>
             </Form>
         </div>
     )
